@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>My Portfolio - Capstone 1</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Macondo&family=MedievalSharp&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Rose:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+    </head>
+    <body>
+
+        <nav class="container-fluid fixed-top navbar navbar-expand-lg px-md-5 px-2" id="navbar">
+          <div class="container" >
+
+            <a class="navbar-brand" href="#" id="logo">My Portfolio</a>
+            <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav gap-4 ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#landing">Landing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tools">Tools</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+            
+        <div class="container-fluid d-flex align-items-center" id="landing">
+                <div class="row pt-md-5 justify-content-center">
+                    <div class="col-10 mx-auto col-md-4 col-lg-3 me-md-0">
+                        <img src="./images/my-pic.png" class="img-fluid rounded-circle" id="landing-image">
+                    </div>
+                    <div class="col-12 col-md-7 text-white text-center text-md-start ps-lg-4 pt-lg-4">
+                        <h1 id="my-name" class="mt-4 mx-auto">Joey Aquino</h1>
+                        <h3 id="my-title" class="mt-3">Full Stack Web Developer</h3>
+                        <a class="btn btn-primary btn-lg mt-3 ms-0" href="#contact" role="button" id="button">Let's talk</a>
+                    </div>
+                </div>  
+            </div>
+
+
+
+        <div class="container-fluid" id="projects">
+            <div class="pt-4 pb-2">
+                <h2 class="text-center">My Projects</h2>                
+            </div>    
+                
+            <div class="row gap-5 gap-md-3 gap-lg-5 justify-content-center pt-2 pb-1 pb-md-4">
+                
+                <div class="card col-4 position-relative" id="card" style="width: 22rem;">
+                  <img src="./images/card-ofc.png" class="" alt="...">
+                  <div class="card-body mb-4">
+                    <h5 class="card-title" id="card-title">ONE Championship</h5>
+                    <p class="card-text">ONE Championship is a global martial arts organization based in Asia that showcases world-class athletes in mixed martial arts, Muay Thai, and kickboxing.</p>
+
+                    <a href="https://www.onefc.com/" class="btn btn-primary" id="card-button">Visit site</a>
+
+                  </div>
+                </div>
+
+                <div class="card col-4 position-relative" id="card" style="width: 22rem;">
+                  <img src="./images/card-eei.png" class="" alt="...">
+                  <div class="card-body mb-4">
+                    <h5 class="card-title" id="card-title">ONE Championship</h5>
+                    <p class="card-text">EEI Corp is a major Philippine engineering and construction firm specializing in large-scale infrastructure, industrial projects, and technical services.</p>
+
+                    <a href="https://www.eei.com.ph/" class="btn btn-primary" id="card-button">Visit site</a>
+
+                  </div>
+                </div>
+
+                <div class="card col-4 position-relative" id="card" style="width: 22rem;">
+                  <img src="./images/card-pac.png" class="" alt="...">
+                  <div class="card-body mb-4">
+                    <h5 class="card-title" id="card-title">PAC-ATLANTIC Group</h5>
+                    <p class="card-text">Pac-Atlantic Group operates as an integrated logistics and services company offering end-to-end freight forwarding, warehousing, customs processing, project-cargo handling, and value-added services such as insurance, BPO support, and trading.</p>
+
+                    <a href="https://www.pacatlanticgroup.com.ph/" class="btn btn-primary" id="card-button">Visit site</a>
+
+                  </div>
+                </div> 
+                
+            </div>
+        </div>
+
+
+        <div class="container-fluid text-center py-3" id="tools">
+            <div class="pt-md-5">
+                <h2 class="text-center">My Tools</h2>                
+            </div>   
+
+            <div class="row px-3 justify-content-center gap-5">
+
+                <div class="col-12 pt-4 col-md-5">
+                    <h3>Front End</h3> 
+              
+                     <div class="d-flex justify-content-center pt-2 gap-3">
+                        <img src="./images/logo-html.png" class="img-fluid" id="tools-image">
+                        <img src="./images/logo-css.png" class="img-fluid" id="tools-image">
+                        <img src="./images/logo-bootstrap.png" class="img-fluid" id="tools-image">
+                    </div>
+                     <div class="d-flex justify-content-center pt-3 gap-3">
+                        <img src="./images/logo-figma.png" class="img-fluid" id="tools-image">
+                        <img src="./images/logo-trello.png" class="img-fluid" id="tools-image">
+                        <img src="./images/logo-sublime.png" class="img-fluid" id="tools-image">                       
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-5 pt-md-4">
+                    <h3>Graphics</h3> 
+                
+                     <div class="d-flex justify-content-center pt-2 gap-3">
+                        <img src="./images/logo-psd.jpg" class="img-fluid" id="tools-image">
+                        <img src="./images/logo-light.png" class="img-fluid" id="tools-image">
+                        <img src="./images/logo-blender.png" class="img-fluid" id="tools-image">
+                    </div>
+                     <div class="d-flex justify-content-center pt-3 gap-3">
+                        <img src="./images/logo-cdr.png" class="img-fluid" id="tools-image">
+                        <img src="./images/logo-vsco.png" class="img-fluid" id="tools-image">
+                        <img src="./images/logo-canva.jpg" class="img-fluid" id="tools-image">                       
+                    </div>
+                </div>
+
+      
+            </div>
+        </div>    
+
+
+        <div class="container-fluid position-relative" id="contact">
+            <div  class="row">
+
+                <div class="col-12 p-3 col-md-6">
+                    <img src="./images/contact-map.png" class="img-fluid">
+                </div>
+
+                <div class="col-12 col-md-6 p-4 bg-warning">
+                    <h1>Contact Me</h1>
+                    <p class="py-1">Please let me know how I can help you.</p>
+                    <div class="row">
+                        <div class="pt-2">
+                          <label for="exampleFormControlInput1" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+                        </div>
+                        <div class="pt-2">
+                          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="john.doe@gmail.com">
+                        </div>
+                        <div class="pt-2">
+                          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="text-end">
+                            <a href="#" class="btn mt-3" id="button-contact">Submit</a>
+                        </div>  
+                    </div>                      
+                </div>              
+                
+            </div>
+        </div>
+
+        <button id="backToTop" class="btn btn-primary rounded-circle">
+          ↑
+        </button>
+
+
+        <script>
+          const btn = document.getElementById("backToTop");
+
+          window.addEventListener("scroll", function () {
+            if (window.scrollY > 150) {
+              btn.style.display = "flex";
+            } else {
+              btn.style.display = "none";
+            }
+          });
+
+          btn.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+        </script>
+
+        <div class="container-fluid fixed-bottom" id="footer">
+            <div class="d-flex gap-3 justify-content-center py-3">
+                <div>2025</div>
+                <div>|</div>
+                <div>All rights reserved.</div>
+            </div>
+        </div>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>
