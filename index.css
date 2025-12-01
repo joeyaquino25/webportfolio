@@ -6,144 +6,98 @@
 
 body{
 	font-family: Montserrat, "Noto Sans";
-
+	color: white;
+	background: 
+		radial-gradient(
+			rgba(26, 11, 51, 0.6), /* top */
+			rgba(26, 11, 51, 0.8)  /* bottom */
+		),
+		url("./images/landing_bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
+
+/*NAVBAR*/
 
 #navbar{
 	background-color: #370088;
-	color: white;
-	border-bottom: 2px solid white;
 }
 
 .navbar-brand{
 	color: white;
 	font-weight: bold;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 }
 
 .nav-link{
-	color: white;
+		color: white;
 }
 
-#nav-button{
-	background-color: #370088;
-	border: 2px solid white;
+
+/*LANDING SECTION*/
+
+#landing{
+	margin-top: 14vh;
 }
 
-#navbar-toggler{
+#landing-img{
 	border: 1px solid white;
 }
 
-#landing{
-
-	background: 
-		linear-gradient(
-			rgba(0, 0, 0, 0.9), /* top */
-			rgba(0, 0, 0, 0.61)  /* bottom */
-		),
-		url("./images/landing_bg.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100vh;
+.my-name{
+	font-weight: 700;
+	font-size: 2rem;
 }
 
-#landing .fixed-btn{
-    display: none !important;
- }
-
-#landing-image{
-	border: 2px solid white;
+.my-title{
+	font-size: 1.3rem;
+	font-weight: 600;
 }
 
-#landing #my-name{
-	font-weight: 800;
-	font-size: 3rem;
+.aboutme{
+	line-height: 20px;
 }
 
-#landing #my-title{
-	font-size: 1.5rem;
-}
-
-#button{
-	  background-color: #370088;
+#landing-button{
+	  background-color: #230854;
 	  border: 2px solid white;
+	  padding-left: 40px;
+	  padding-right: 40px;
 	  color: white;	
 	  cursor: pointer;
-	  font-size: 1rem;
+	  font-size: 1.3rem;
 	  transition: 0.2s;
 	}
 
-	#landing-button:hover {
+#landing-button:hover {
 	  opacity: 0.8;
 	  border: 0px;
 	  background-color: white;
 	  color: #370088;
 	}
 	
-	#landing-button:active {
+#landing-button:active {
 	  opacity: 0.4;
 	  color: black;
 	}
+
+
+/*PROJECTS*/
 
 #projects{
-	background-color: #4B4453;
-	color: white;
-
-}
-
-.card-image{
-
 	background: 
 		linear-gradient(
-			rgba(0, 0, 0, 0.9), /* top */
-			rgba(0, 0, 0, 0.61)  /* bottom */
-		),
-		url("./images/landing_bg.png");
-	background-repeat: no-repeat;
-	background-size: cover;
+		 rgba(250, 242, 242, 0.2),
+		 rgba(250, 242, 242, 0.2)
+		 );
 }
 
-.limited-textarea {
-	resize: vertical;
-  max-height: 135px;     
-  min-height: 100px;   
-  
+#project-title{
+	font-weight: bold;
 }
 
-#card #card-button, #contact #contact-button{
-	position:  absolute;
-	bottom: 15px;
-	  background-color: #370088;
-	  border: 2px solid white;
-	  color: white;	
-	  cursor: pointer;
-	  font-size: 1rem;
-	  transition: 0.2s;
-	}
-
-	#landing-button:hover {
-	  opacity: 0.8;
-	  border: 0px;
-	  background-color: white;
-	  color: #370088;
-	}
-	
-	#landing-button:active {
-	  opacity: 0.4;
-	  color: black;
-	}
-
-.fixed-btn{
-	position:  fixed;
-	right: 50px;
-	bottom: 30px;
-	background-color: #4B4453;
-	color: white;
-	z-index: 100;
-}
-
-#card{
-	background-color: #B1A8B9;
+#proj-card{
 	border: 2px solid white;
 	color: #370088;
 }
@@ -152,31 +106,99 @@ body{
 	font-weight: bold;
 }
 
+/*TOOLS SECTION*/
+
 #tools{
-	background-color: #370088;
-	color: white;
-	height: 100vh;
+	background: 
+		linear-gradient(
+		 rgba(250, 242, 242, 0.2),
+		 rgba(250, 242, 242, 0.2)
+		 );
+}
+
+#tools-title{
+	font-weight: bold;
 }
 
 #tools-image{
   width: 200px;             /* or any size, or use responsive units */
   aspect-ratio: 1 / 1;      /* ensures square shape */
   overflow: hidden;         /* hides cropped parts */
+  border-radius: 10px; 
+  border: 1px solid white;
 }
 #tools img{
   width: 100%;
-  height: 100%;
   object-fit: cover;        /* preserves aspect ratio, fills container (cropped) */
   object-position: center;  /* adjust focal point */
-  display: block;   
+  display: block; 
 }     
 
+
+/*CONTACT SECTION*/
+
 #contact{
-	background-color: #4B4453;
-	color: white;
-	height: 100vh;
-	margin-bottom: 32vh;
+	background: 
+		linear-gradient(
+		 rgba(250, 242, 242, 0.2),
+		 rgba(250, 242, 242, 0.2)
+		 );
 }
+
+#contact-map-area{
+}    
+
+#contact-map-image{
+	overflow: hidden;         /* hides cropped parts */
+	aspect-ratio: 1 / 1;      /* ensures square shape */
+	object-fit: cover;        /* preserves aspect ratio, fills container (cropped) */
+	object-position: center;  /* adjust focal point */
+	display: block; 
+	border-radius: 10px; 
+	border: 1px solid white;
+}     
+
+#contact-form-area{
+}
+
+#contact-form{
+	border: 1px solid white;
+	border-radius: 10px;
+	background-color: #370088;
+	
+}
+
+#contact-textarea{
+	resize: vertical;
+  max-height: 80px;     
+  min-height: 40px;    
+}
+
+.contact-form-button{
+		background-color: #370088;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		border-radius: 5px;
+	  border: 2px solid white !important;
+	  color: white;	
+	  cursor: pointer;
+	  font-size: 1rem;
+	  transition: 0.2s;
+	}
+
+.contact-form-button:hover {
+	  opacity: 0.8;
+	  border: 0px;
+	  background-color: white;
+	  color: #370088;
+	}
+	
+.contact-form-button:active {
+	  opacity: 0.4;
+	  color: black;
+	}
 
 #footer{
 	background-color: #370088;
